@@ -1,0 +1,124 @@
+
+.topbar{
+    
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    z-index: 10000;
+    display: flex;
+}
+
+.boxlogo{
+    width: 25%;
+    display: flex;
+    height: 80px;
+}
+
+.navbox{
+    background-color: #E9EDF2;
+    width: 75%;    
+    height: 80px;
+    display: flex;
+}
+
+.boxmenubloques{
+    width: 10%;
+}
+
+.boxacciones{
+    width: 35%;
+    display: flex;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+}
+
+@media (max-width: 1600px) {
+    .boxacciones{
+        width: 60%;
+    }
+}
+
+.linkbox {
+    opacity: 0.8;
+    transition: all 0.3s;
+}
+
+.linkbox:hover {
+    text-shadow: 0px 0px 2px #BDC7D2;
+    opacity: 1;
+}
+
+.js-snippets{
+    width: 90%;
+    margin: 0px auto;
+    zoom: 40%;
+}
+
+.js-snippets>.bloque{
+    border-radius: 8px;
+    box-shadow: 0px 0px 14px rgba(29, 76, 147, 0.1);    
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.js-snippets>.tittleblock{
+    zoom: 250%;
+    text-align: center;
+    opacity: 0.3;    
+}
+
+.js-snippets>.bloque:hover{
+    box-shadow: 0px 0px 14px rgba(29, 76, 147, 0.3);
+}
+
+.bloque {
+    width: 100%;
+    margin: 0px auto;
+    background-color: white;   
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+
+.js-delete-btn{
+    padding: 20px;
+    z-index: 30000;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin: 5px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 14px rgba(29, 76, 147, 0.2);
+    display: none;
+    background-color: #001868;
+    
+}
+
+.js-delete-btn>span{
+    color: white;
+}
+
+.constructor>.bloque:hover>.js-delete-btn {
+    display: block; 
+}
+
+/* zoom dentro del construstor */
+
+.zoomin{
+    zoom: 70%;
+}
+
+.buscador{
+    width: 90%;
+    margin: 0px auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 14px rgba(29, 76, 147, 0.1);
+    margin-top: 30px;
+    transition: all 0.3s;
+}
+
+.relative{
+    position: relative;
+}

@@ -1,0 +1,414 @@
+@import 'margin-padding.scss'
+
+*
+    margin:  0px
+    padding:  0px
+    -webkit-tap-highlight-cor: transparent
+
+::-webkit-scrollbar 
+  display: none
+
+
+.cont
+    width:  80%
+    margin-left: auto
+    margin-right: auto
+
+@media screen and(max-width: 1500px)
+    .cont
+        width: 90%
+        margin: 0px auto
+
+@media screen and(max-width: 800px)
+    .cont
+        width: 95%
+        margin: 0px auto
+
+.row
+    width: 100%
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: stretch
+    flex-wrap: wrap
+
+
+// tools for position content
+
+.df
+    display:  flex
+
+// flex direction
+
+.frw
+    flex-direction: row
+
+.frw-reverse
+    flex-direction: row-reverse
+
+.fcol
+    flex-direction: column
+
+.fcol-reverse
+    flex-direction: column-reverse
+
+
+
+// justify content
+
+.jcb
+    justify-content:  space-between
+
+.jca
+    justify-content:  space-around
+
+.jce
+    justify-content:  flex-end
+
+.jcs
+    justify-content:  flex-start
+
+.jc
+    justify-content: flex-center
+
+
+// aling contend
+
+.acc
+    align-content:  center
+
+.ace
+    align-content:  end
+
+.acb
+    align-content:  space-between
+
+.acs
+    align-content:  start
+
+
+// aling items
+
+.fais
+    align-items: start
+
+.faie
+    align-items: end
+
+.faic
+    align-items: center
+
+.fais
+    align-items: stretch
+
+.faib
+    align-items: baseline
+
+// flex wrap
+
+.fw
+    flex-wrap: wrap
+
+// margin 0px auto
+
+.ma
+    margin-left: auto
+    margin-right: auto
+
+// text position
+
+.tc
+    text-align: center
+
+.tl
+    text-align: left
+
+.tr
+    text-align: right
+
+
+// col - system
+.c1
+    width: 14.285%
+
+
+.c1-5
+    width: 16.666%
+
+
+.c2
+    width: 20%
+
+
+.c2-5
+    width: 25%
+
+
+.c3
+    width: 33.33%
+
+
+.c3-5
+    width: 35%
+
+
+.c4
+    width: 40%
+
+
+.c4-5
+    width: 45%
+
+
+.c5
+    width: 50%
+
+
+.c5-5
+    width: 55%
+
+
+.c6
+    width: 60%
+
+
+.c6-5
+    width: 65%
+
+
+.c7
+    width: 70%
+
+
+.c7-5
+    width: 75%
+
+
+.c8
+    width: 80%
+
+
+.c8-5
+    width: 85%
+
+
+.c9
+    width: 85.71%
+
+
+.c9-5
+    width: 95%
+
+
+.c10
+    width: 100%
+
+
+@media screen and(max-width: 1400px)
+    .cm1
+        width: 14.285%
+
+
+    .cm1-5
+        width: 16.666%
+
+
+    .cm2
+        width: 20%
+
+
+    .cm2-5
+        width: 25%
+
+
+    .cm3
+        width: 33.33%
+
+
+    .cm3-5
+        width: 35%
+
+
+    .cm4
+        width: 40%
+
+
+    .cm4-5
+        width: 45%
+
+
+    .cm5
+        width: 50%
+
+
+    .cm5-5
+        width: 55%
+
+
+    .cm6
+        width: 60%
+
+
+    .cm6-5
+        width: 65%
+
+
+    .cm7
+        width: 70%
+
+
+    .cm7-5
+        width: 75%
+
+
+    .cm8
+        width: 80%
+
+
+    .cm8-5
+        width: 85%
+
+
+    .cm9
+        width: 85.71%
+
+
+    .cm9-5
+        width: 95%
+
+
+    .cm10
+        width: 100%
+
+
+@media screen and(max-width: 800px)
+    .cs1
+        width: 14.285%
+
+
+    .cs1-5
+        width: 16.666%
+
+
+    .cs2
+        width: 20%
+
+
+    .cs2-5
+        width: 25%
+
+
+    .cs3
+        width: 33.33%
+
+
+    .cs3-5
+        width: 35%
+
+
+    .cs4
+        width: 40%
+
+
+    .cs4-5
+        width: 45%
+
+
+    .cs5
+        width: 50%
+
+
+    .cs5-5
+        width: 55%
+
+
+    .cs6
+        width: 60%
+
+
+    .cs6-5
+        width: 65%
+
+
+    .cs7
+        width: 70%
+
+
+    .cs7-5
+        width: 75%
+
+
+    .cs8
+        width: 80%
+
+
+    .cs8-5
+        width: 85%
+
+
+    .cs9
+        width: 85.71%
+
+
+    .cs9-5
+        width: 95%
+
+
+    .cs10
+        width: 100%
+
+
+
+// positions
+
+.pf
+    position: fixed
+
+.pa
+    position: absolute
+
+.pr
+    position: relative
+
+
+// full height
+
+.fh
+    height: 100vh
+
+
+// usal possitons
+
+.b0
+    bottom: 0px
+
+.b2
+    bottom: 20px
+
+.r2
+    right: 20px
+
+.t0
+    top: 0px
+
+// z-index
+
+.zi100
+    z-index: 100
+
+.zi300
+    z-index: 300
+
+.zi1000
+    z-index: 1000
+
+// hide
+
+.hide
+    display: none
+
+// cursor pointer
+
+.pointer
+    cursor: pointer
+

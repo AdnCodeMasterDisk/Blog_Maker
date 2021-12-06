@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DND</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <!-- estilos editor-->
+    <link rel="stylesheet" href="editor/content-tools.min.css">
+
+    <!-- Estilos de la app -->
+    <link rel="stylesheet" href="css/app.css">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+
+</head>
+
+<body>
+
+    <div class="topbar e5">
+
+        <div class="boxlogo bgc1 zi100 e5">
+            <div class="c1 pointer">
+                <span class="material-icons fc3 pt15 pl8" style="font-size: 50px;">keyboard_arrow_left</span>
+            </div>
+            <div class="c8-5 mt10">
+                <p class="fc3 subtittle1 fw8" style="margin-top: 5px; margin-bottom: -5px;">BlogMaker</p>
+                <p class="fc2 body1" style="font-size: 14px;">Speed create post by smartWeb</p>
+            </div>
+        </div>
+
+        <div class="navbox">
+
+            <div class="boxmenubloques">
+                <div class="row pointer faic p25 linkbox" id="drawemenu">
+                    <div class="c1">
+                        <span class="material-icons fc1 p5">menu</span>
+                    </div>
+                    <div class="c9">
+                        <p class="fc1 ml25 link">Blocks</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="boxacciones">
+                <div class="row pointer faic p25 linkbox" id="prevbtn">
+                    <div class="c1">
+                        <span class="material-icons fc1 p5">preview</span>
+                    </div>
+                    <div class="c9">
+                        <p class="fc1 ml25 link">Preview</p>
+                    </div>
+                </div>
+
+                <div class="row pointer faic p25 linkbox" id="downloadbtn">
+                    <div class="c1">
+                        <span class="material-icons fc1 p5">download</span>
+                    </div>
+                    <div class="c9">
+                        <p class="fc1 ml25 link">Download</p>
+                    </div>
+                </div>
+
+                <div class="row pointer faic p25 linkbox" id="btnaddcode" onclick="addcode()">
+                    <div class="c1">
+                        <span class="material-icons fc1 p5">code</span>
+                    </div>
+                    <div class="c9">
+                        <p class="fc1 ml25 link">AddCode</p>
+                    </div>
+                </div>
+
+                <div class="row pointer faic p25 linkbox hide" id="savenewcodebtn" onclick=" guardarnuevo()">
+                    <div class="c1">
+                        <span class="material-icons fc1 p5">save</span>
+                    </div>
+                    <div class="c9">
+                        <p class="fc1 ml25 link">Save</p>
+                    </div>
+                </div>
+
+                <div class="row pointer faic p25 linkbox" id="lookcodebtn-editado" onclick=" vercodigoenace()">
+                    <div class="c1">
+                        <span class="material-icons fc1 p5">code</span>
+                    </div>
+                    <div class="c9">
+                        <p class="fc1 ml25 link">Code</p>
+                    </div>
+                </div>
+                <div class="row pointer faic p25 linkbox hide" id="savecodebtn-edit"  onclick="savecode()">
+                    <div class="c1">
+                        <span class="material-icons fc1 p5">save</span>
+                    </div>
+                    <div class="c9">
+                        <p class="fc1 ml25 link">Save</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div id="prevexitbtn" class="pointer">
+        <div class="pf hide" style="top: 20px; right: 20px; z-index: 4000;" id="exitprev">
+            <span class="material-icons fc1 p5" style="font-size: 40px;">reply</span>
+        </div>
+    </div>
+
+    <div class="df full">
+        <!--start drawer blocks-->
+        <div class="c2-5 pr bgc2 e5" id="bloquescont" style="min-height: 100vh;">
+
+
+            <div class="pt80"></div>
+
+            <section class="buscador">
+                <div class="fw df">
+                    <input type="text" class="bgc3 p10 body1 o3" placeholder="Buscar"
+                        style="width: 98%; margin:2%; border-radius: 8px;" id="myInput">
+                </div>
+            </section>
+
+            <div class="js-snippets">
+                <!-- block 1-->
+
+
+
+                <div class="bloque js-snippet">
+                    <p class="hide nombreblock">Texto centrado</p>
+                    <div class="cont body1 fc2 tac pt20 pb20" data-editable data-name="contenido">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error culpa ullam accusamus laudantium ea, amet tenetur exercitationem corrupti fuga perferendis similique temporibus facilis voluptates optio? Id repudiandae aut quam suscipit!
+                        </p>
+                    </div>
+                </div>
+
+
+                <!-- block 2-->
+
+                <div class="bloque js-snippet">
+                    <p class="hide nombreblock">Texto derecha</p>
+                    <div class="cont body1 fc2 tal pt20 pb20" data-editable data-name="contenido">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error culpa ullam accusamus laudantium ea, amet tenetur exercitationem corrupti fuga perferendis similique temporibus facilis voluptates optio? Id repudiandae aut quam suscipit!
+                        </p>
+                    </div>
+                </div>
+
+                <!-- block 3-->
+
+                <div class="bloque js-snippet">
+                    <p class="hide nombreblock">Texto izquierda</p>
+                    <div class="cont body1 fc2 tar pt20 pb20" data-editable data-name="contenido">
+                        <p>
+                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Error culpa ullam accusamus laudantium ea, amet tenetur exercitationem corrupti fuga perferendis similique temporibus facilis voluptates optio? Id repudiandae aut quam suscipit!
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <!--end drawer blocks-->
+
+
+        <!-- start constructor-->
+        <div class="constructor c7-5 mt115 js-droppable zoomin " id="constructor" style="min-height: 100vh;">
+
+        </div>
+
+        <!--start ace editor para agragar nuevo html-->
+
+        <div class="codeeditoradd c7-5 mt80 hide" id="addcode" style="min-height: 100vh; font-size: 16px;">
+
+        </div>
+
+        
+
+        <!--end ace editor para agragar nuevo html-->
+
+
+
+        <!-- start code look-->
+        <div class="codearea c7-5 bgc3 mt80 hide" id="codearea" style="height: 100%;">
+            <textarea class="full bgc1 body1 fc2 getcode" style="min-height: 100vh;" id="codetextarea">
+
+            </textarea>
+        </div>
+        <!-- end code look-->
+    </div>
+
+    <!-- js editor-->
+
+
+    <script src="ace/ace.js" charset="utf-8"></script>
+    <script src="ace/ext-language_tools.js"></script>
+    <script src="ace/ext-emmet.js"></script>
+    <script src="ace/emmet-library.js"></script>
+    <script src="ace/app.js"></script>
+
+    <script src="js/jq.min.js"></script>
+    <script src="js/bundle.js"></script>
+
+
+    <script src="editor/content-tools.min.js"></script>
+    <script src="editor/editor.js"></script>
+
+
+
+
+
+</body>
+
+</html>

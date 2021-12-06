@@ -1,0 +1,437 @@
+@import 'colors';
+
+$f1: 'DM Sans', sans-serif;
+
+.br{
+    height: 18px;
+}
+
+.ff1{
+    font-family: $f1;
+}
+
+h1{
+    font-family: $f1;
+    font-weight: 300;
+    font-size: 91px;
+    letter-spacing: -1.5;
+}
+
+h2{
+    font-family: $f1;
+    font-weight: 300;
+    font-size: 50px;
+    letter-spacing: -0.5;
+}
+
+h3{
+    font-family: $f1;
+    font-weight: 400;
+    font-size: 38px;
+    letter-spacing: 0;
+}
+
+h4{
+    font-family: $f1;
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: 0.25;
+}
+
+
+h5{
+    font-family: $f1;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0;
+}
+
+h6{
+    font-family: $f1;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.15;
+}
+
+.subtittle1{
+    font-family: $f1;
+    font-weight: 400;
+    font-size: 25px;
+    letter-spacing: 0.5;
+}
+
+.subtittle2{
+    font-family: $f1;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.25;
+}
+
+
+.link{
+    font-family: $f1;
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 0.5;
+    line-height: 28px;
+    word-spacing: 1px;
+    text-decoration: none;
+
+}
+
+.body1{
+    font-family: $f1;
+    font-weight: 300;
+    font-size: 1em;
+    letter-spacing: 0.5;
+    line-height: 28px;
+    word-spacing: 1px;
+}
+
+.body2{
+    font-family: $f1;
+    font-weight: 400;
+    font-size: 1em;
+    letter-spacing: 0.25;
+}
+
+.body1-large{
+    font-family: $f1;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 0.5;
+    line-height: 28px;
+    word-spacing: 1px;
+}
+
+.body2-large{
+    font-family: $f1;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.25;
+}
+
+.buttontext{
+    font-family: $f1;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1.25;
+}
+
+.caption{
+    font-family: $f1;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.4;
+}
+
+.overline{
+    font-family: $f1;
+    font-weight: 400;
+    font-size: 10px;
+    letter-spacing: 1.5;
+}
+
+
+@media screen and(max-width: 800px){
+
+    h1{
+        font-size: 40px;
+        letter-spacing: -1.5;
+    }
+
+    h2{
+        font-size: 30px;
+        letter-spacing: -0.5;
+    }
+
+    h3{
+        font-size: 28px;
+        letter-spacing: 0;
+    }
+
+    h4{
+        font-size: 20px;
+        letter-spacing: 0.25;
+    }
+
+
+    h5{
+        font-size: 18px;
+        letter-spacing: 0;
+    }
+
+    h6{
+        font-size: 16px;
+        letter-spacing: 0.15;
+    }
+
+    .subtitle1{
+        font-size: 16px;
+        letter-spacing: 0.5;
+    }
+
+    .subtitle2{
+        font-size: 14px;
+        letter-spacing: 0.25;
+    }
+
+    .body1{
+        font-family: $f1;
+        font-weight: 300;
+        font-size: 1em;
+        letter-spacing: 0.5;
+        line-height: 28px;
+        word-spacing: 1px;
+    }
+
+    .body2{
+        font-family: $f1;
+        font-weight: 400;
+        font-size: 1em;
+        letter-spacing: 0.25;
+    }
+
+}
+
+
+// font weight
+
+.fw1{
+    font-weight: 100;
+}
+
+.fw2{
+    font-weight: 200;
+}
+
+
+.fw3{
+    font-weight: 300;
+}
+
+.fw4{
+    font-weight: 400;
+}
+
+.fw5{
+    font-weight: 500;
+}
+
+.fw6{
+    font-weight: 600;
+}
+
+.fw7{
+    font-weight: 700;
+}
+
+.fw8{
+    font-weight: 800;
+}
+
+.fw9{
+    font-weight: 900;
+}
+
+.fw10{
+    font-weight: 1000;
+}
+
+
+//opacity
+
+.o1{
+    opacity: 0.1;
+}
+
+.o2{
+    opacity: 0.2;
+}
+
+.o3{
+    opacity: 0.3;
+}
+
+.o4{
+    opacity: 0.4;
+}
+
+.o5{
+    opacity: 0.5;
+}
+
+.o6{
+    opacity: 0.6;
+}
+
+.o7{
+    opacity: 0.7;
+}
+
+.o8{
+    opacity: 0.8;
+}
+
+.o9{
+    opacity: 0.9;
+}
+
+.o10{
+    opacity: 1;
+}
+
+//mayusculas
+
+.mys{
+    text-transform: uppercase;
+}
+
+//minusculas
+
+.mns{
+    text-transform: lowercase;
+}
+
+//Mayusculas en la primer palabra
+
+.myp{
+    text-transform: capitalize;
+}
+
+//text shadow
+
+.sw1{
+    text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.2 );
+}
+
+//Font style
+
+.i{
+    font-style: italic; //italica
+}
+
+.n{
+    font-weight: bold; //negrilla
+}
+
+.l{
+    font-weight: lighter;
+}
+
+//Span
+
+.sp-s{
+    color: $c1;
+}
+
+.sp-n{
+    color: $c1;
+    font-weight: bold;
+}
+
+.sp-i{
+    color: $c1;
+    font-style: italic;
+}
+
+//referencias
+
+.ref-a{
+    font-family: $f1;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 0.5;
+    font-style: italic;
+    line-height: 25px;
+}
+
+.ref-i{
+    font-family: $f1;
+    font-weight: 300;
+    font-size: 12px;
+    letter-spacing: 0.5;
+    font-style: italic;
+}
+
+//lineas separatorias
+
+.l1{
+    width: 10%;
+}
+
+.l2{
+    width: 20%;
+}
+
+.l3{
+    width: 30%;
+}
+
+.l4{
+    width: 40%;
+}
+
+.l5{
+    width: 50%;
+}
+
+.l6{
+    width: 60%;
+}
+
+.l7{
+    width: 70%;
+}
+
+.l8{
+    width: 80%;
+}
+
+.l9{
+    width: 90%;
+}
+
+.l10{
+    width: 100%;
+}
+
+//margen linea
+
+.ls1{
+    margin-top: 18px;
+    margin-bottom: 24px;
+}
+
+
+.ls2{
+    margin-top: 8px;
+    margin-bottom: 0px;
+}
+
+//posicion de la linea
+
+.lc{
+    margin: 0px auto;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+
+//centrar texto
+
+.tac{
+    text-align: center;
+}
+
+.tar{
+    text-align: right;
+}
+
+.tal{
+    text-align: left;
+}
+
+.taj{
+    text-align: justify;
+}
